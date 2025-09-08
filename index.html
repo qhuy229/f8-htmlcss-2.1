@@ -15,7 +15,7 @@
     </head>
     <body style="height: 10000px">
         <!---------------------- HEADER ------------------------------>
-        <header class="header">
+        <header class="header fixed">
             <div class="content">
                 <!---------- Heading ---------->
                 <div class="header__heading">
@@ -50,9 +50,14 @@
                         </div>
                     </nav>
                 </div>
+            </div>
+        </header>
 
-                <!---------- Hero ---------->
-                <div class="header__hero">
+        <!---------------------- MAIN ------------------------------>
+        <main class="main">
+            <!---------- Hero ---------->
+            <div class="header__hero">
+                <div class="content">
                     <div class="header__hero--info">
                         <p class="header__info--overline">
                             😎 EASY LEARNING PLATFORM
@@ -145,10 +150,7 @@
                     </div>
                 </div>
             </div>
-        </header>
 
-        <!---------------------- MAIN ------------------------------>
-        <main class="main">
             <!---------- Features ---------->
             <div class="Features">
                 <div class="content">
@@ -218,13 +220,15 @@
                     <div class="course__header">
                         <p class="course__header--overline">C O U R S E S</p>
                         <h2 class="course__header--heading">Popular Courses</h2>
-                       <div class="course__header--desc-view-all">
+                        <div class="course__header--desc-view-all">
                             <p class="course__header--desc">
-                                Check out our most poular courses that suit for you.
-                                Here you can find your favourite one.
+                                Check out our most poular courses that suit for
+                                you. Here you can find your favourite one.
                             </p>
-                            <a href="#!" class="course__header--view-all">View All Courses</a>
-                       </div>
+                            <a href="#!" class="course__header--view-all"
+                                >View All Courses</a
+                            >
+                        </div>
                     </div>
                     <section class="course__section">
                         <ul class="course__section--list">
@@ -236,7 +240,9 @@
                                 />
                                 <div class="course__section--items__info">
                                     <a href="#!">
-                                        <p class="course__section--items__heading">
+                                        <p
+                                            class="course__section--items__heading"
+                                        >
                                             Web Design
                                         </p>
                                     </a>
@@ -301,7 +307,9 @@
                                 />
                                 <div class="course__section--items__info">
                                     <a href="#!">
-                                        <p class="course__section--items__heading">
+                                        <p
+                                            class="course__section--items__heading"
+                                        >
                                             Web Development
                                         </p>
                                     </a>
@@ -366,7 +374,9 @@
                                 />
                                 <div class="course__section--items__info">
                                     <a href="#!">
-                                        <p class="course__section--items__heading">
+                                        <p
+                                            class="course__section--items__heading"
+                                        >
                                             UI/UX Design
                                         </p>
                                     </a>
@@ -425,8 +435,213 @@
                             </li>
                         </ul>
                     </section>
+                    <aside class="course__countdown">
+                        <ul class="course__countdown--list">
+                            <li class="course__countdown-item">
+                                <p class="course__countdown--quantity">100+</p>
+                                <p class="course__countdown--desc">
+                                    Popular Courses
+                                </p>
+                            </li>
+
+                            <li class="course__countdown-item">
+                                <p class="course__countdown--quantity">500+</p>
+                                <p class="course__countdown--desc">
+                                    Skilled Trainer
+                                </p>
+                            </li>
+
+                            <li class="course__countdown-item">
+                                <p class="course__countdown--quantity">1M+</p>
+                                <p class="course__countdown--desc">
+                                    Student Learning
+                                </p>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+
+            <!---------- Feedback ---------->
+            <div class="feedback">
+                <div class="content">
+                    <div class="feedback__info">
+                        <img
+                            src="./assets/icons/quotation.svg"
+                            alt="quotation"
+                            class="feedback__quotation"
+                        />
+                        <p class="feedback__content">
+                            “They are the best people. And this is the suitable
+                            platform to learn from distance.”
+                        </p>
+                        <div class="feedback__student-info">
+                            <div class="feedback__student-info--hyphen"></div>
+                            <div class="feedback__student-info--name">
+                                Ben Foakes,
+                            </div>
+                            <div class="feedback__student-info--career">
+                                student.
+                            </div>
+                        </div>
+                        <div class="feedback__slider-arrows">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="130"
+                                height="50"
+                                viewBox="0 0 130 50"
+                                fill="none"
+                            >
+                                <circle
+                                    cx="105"
+                                    cy="25"
+                                    r="25"
+                                    fill="#2AC9BF"
+                                />
+                                <path
+                                    d="M102 31L108 25L102 19"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <circle
+                                    cx="25"
+                                    cy="25"
+                                    r="25"
+                                    transform="matrix(-1 0 0 1 50 0)"
+                                    fill="#2AC9BF"
+                                />
+                                <path
+                                    d="M28 31L22 25L28 19"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="feedback__img">
+                        <img
+                            src="./assets/imgs/pp1.svg"
+                            alt=""
+                            class="feedback__img--people feedback__img--people-1"
+                        />
+                        <img
+                            src="./assets/imgs/pp2.svg"
+                            alt=""
+                            class="feedback__img--people feedback__img--people-2"
+                        />
+                        <img
+                            src="./assets/imgs/pp3.svg"
+                            alt=""
+                            class="feedback__img--people feedback__img--people-3"
+                        />
+                        <img
+                            src="./assets/imgs/pp4.svg"
+                            alt=""
+                            class="feedback__img--people feedback__img--people-4"
+                        />
+                        <img
+                            src="./assets/imgs/pp5.svg"
+                            alt=""
+                            class="feedback__img--people feedback__img--people-5"
+                        />
+                        <img
+                            src="./assets/imgs/pp6.svg"
+                            alt=""
+                            class="feedback__img--people feedback__img--people-6"
+                        />
+                    </div>
+                </div>
+            </div>
+            <!---------- Banner ---------->
+            <div class="banner">
+                <div class="content">
+                    <div class="banner__info">
+                        <h3 class="banner__title">Ready to Get Admit</h3>
+                        <p class="banner__desc">Create your account and Boost your Career.</p>
+                    </div>
+                    <button class="btn banner__btn">Get Started</button>
                 </div>
             </div>
         </main>
+
+        <!---------------------- FOOTER ------------------------------>
+        <footer class="footer">
+            <div class="content">
+                <img src="./assets/icons/Logo.svg" alt="bensnik." class="footer__logo nav__heading--logo">
+                <ul class="footer__info">
+                    <li class="footer__info--list">
+                        <a class="footer__infor--list__title" href="#!">Company</a>
+                        <ul class="footer__info--list__items">
+                            <li class="footer__info--list__item colst--about">
+                                <a  href="#!">About</a>
+                            </li>
+                            <li class="footer__info--list__item colst--carrer">
+                                <a href="#!">Careers</a>
+                            </li>
+                            <li class="footer__info--list__item">
+                                <a href="#!">Press</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="footer__info--list">
+                        <a class="footer__infor--list__title" href="#!">Community</a>
+                        <ul class="footer__info--list__items">
+                            <li class="footer__info--list__item">
+                                <a href="#!">Team Plans</a>
+                            </li>
+                            <li class="footer__info--list__item">
+                                <a href="#!">Blog</a>
+                            </li>
+                            <li class="footer__info--list__item">
+                                <a href="#!">Students</a>
+                            </li>
+                            <li class="footer__info--list__item">
+                                <a href="#!">Schoolarships</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__info--list">
+                        <a class="footer__infor--list__title" href="#!">Teaching</a>
+                        <ul class="footer__info--list__items">
+                            <li class="footer__info--list__item">
+                                <a href="#!">Become a teacher</a>
+                            </li>
+                            <li class="footer__info--list__item">
+                                <a href="#!">Teaching academy</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="footer__info--list">
+                        <a class="footer__infor--list__title colfouth" href="#!">Be social</a>
+                        <ul class="footer__info--list__items">
+                            <li class="footer__info--list__item ">
+                                <img src="./assets/icons/tw.svg" alt="icon social" class="footer__info--list__item--icon"></img>
+                                <a href="#!">Twitter</a>
+                            </li>
+                            <li class="footer__info--list__item colfouth__detail">
+                                <img src="./assets/icons/fb.svg" alt="icon social" class="footer__info--list__item--icon"></img>
+                                <a href="#!">Facebook</a>
+                            </li>
+                            <li class="footer__info--list__item colfouth__detail">
+                                <img src="./assets/icons/ig.svg" alt="icon social" class="footer__info--list__item--icon"></img>
+                                <a href="#!">Instagram</a>
+                            </li>
+                            <li class="footer__info--list__item colfouth__detail">
+                                <img src="./assets/icons/linkin.svg" alt="icon social" class="footer__info--list__item--icon"></img>
+                                <a href="#!">Linkedin</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer__copyright">© Copyright 2020 by Mayad Ahmed. All right reserved.</p>
+        </footer>
     </body>
 </html>

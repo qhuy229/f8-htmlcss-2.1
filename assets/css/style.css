@@ -41,14 +41,20 @@ a {
 
 /* -------- heading -------- */
 
-.header {
-    padding-bottom: 79px;
+.header.fixed {
+    padding-bottom: 30px;
+    position: sticky;
+    z-index: 2;
+    top: -28px;
 }
 
 .nav__heading {
     display: flex;
     align-items: center;
-    padding-top: 52px;
+    margin-top: 20px;
+    padding-top: 32px;
+    background: #fff;
+    padding-bottom: 20px;
 }
 
 .nav__heading--list {
@@ -68,7 +74,7 @@ a {
 }
 
 .nav__heading--actions {
-    margin-left: 177px;
+    margin-left: 167px;
     display: flex;
 }
 
@@ -78,7 +84,7 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     border: none;
-    background: #ffffff;
+    background: transparent;
     white-space: nowrap;
     cursor: pointer;
 }
@@ -98,10 +104,14 @@ a {
 
 /* -------- hero --------- */
 
+.header__hero .content {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header__hero {
     display: flex;
     gap: 71px;
-    margin-top: 50px;
 }
 
 .header__hero--info {
@@ -130,6 +140,7 @@ a {
     font-weight: 400;
     line-height: 3.2rem;
     margin-bottom: 52px;
+    width: 374px;
 }
 .header__info--btn {
     color: #fff;
@@ -278,7 +289,7 @@ a {
     padding-right: 112px;
 }
 
-.content {
+.Features .content {
     padding-top: 130px;
 }
 
@@ -337,6 +348,10 @@ a {
 }
 
 /* ------------- Courses ---------------- */
+
+.Courses .content {
+    padding-top: 130px;
+}
 
 .course__header--overline {
     color: #767e7e;
@@ -402,7 +417,7 @@ a {
 
 .course__section--items__info {
     position: absolute;
-    padding: 18px 82px 29px 25px;
+    padding: 18px 0px 29px 25px;
     width: 325px;
     height: 195px;
     border-radius: 8px;
@@ -410,15 +425,15 @@ a {
     box-shadow: 0 16px 90px 0 rgba(0, 0, 0, 0.05);
     top: 332px;
     left: 17px;
+    margin-bottom: 265px;
 }
 
-.course__section--items__heading  {
+.course__section--items__heading {
     color: #0d1111;
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 16px;
 }
-
 
 .course__section--items__fee-value {
     display: flex;
@@ -449,4 +464,239 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.course__countdown {
+    margin-top: 389px;
+    padding-bottom: 100px;
+    margin-bottom: 164px;
+}
+
+.course__countdown--list {
+    display: flex;
+    justify-content: center;
+    gap: 210px;
+}
+
+.course__countdown--quantity {
+    color: #0d1111;
+    text-align: center;
+    font-size: 6.2rem;
+    font-weight: 700;
+    margin-bottom: 11px;
+    padding: 26px 0 15px;
+}
+
+.course__countdown--desc {
+    color: #767e7e;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/* ---------- feedback ----------- */
+.feedback .content {
+    display: flex;
+    padding-bottom: 130px;
+}
+
+.feedback__info {
+    width: 35.79%;
+}
+
+.feedback__quotation {
+    margin-bottom: 27px;
+}
+
+.feedback__content {
+    color: #5d6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 4.8rem;
+    margin-bottom: 33px;
+}
+
+.feedback__student-info {
+    margin-bottom: 52px;
+}
+
+.feedback__student-info--hyphen {
+    width: 8px;
+    height: 2px;
+    background: #070707;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 4px;
+}
+
+.feedback__student-info--name {
+    color: #070707;
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.feedback__student-info--career {
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.feedback__slider-arrows {
+    display: inline-block;
+}
+
+.feedback__slider-arrows:hover {
+    cursor: pointer;
+}
+
+.feedback__img {
+    position: relative;
+    width: 64.21%;
+    height: 481px;
+}
+
+.feedback__img--people {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.feedback__img--people-1 {
+    top: 0;
+    left: 216px;
+    background: url(<path-to-image>) #1ebfc1 50% / cover no-repeat;
+}
+
+.feedback__img--people-2 {
+    top: 19px;
+    right: 0;
+    background: url(<path-to-image>) #bf83ff 50% / cover no-repeat;
+}
+
+.feedback__img--people-3 {
+    left: 345px;
+    top: 107px;
+    background: url(<path-to-image>) #ff8282 50% / cover no-repeat;
+}
+
+.feedback__img--people-4 {
+    left: 72px;
+    top: 258px;
+    background: url(<path-to-image>) #ffc147 50% / cover no-repeat;
+}
+
+.feedback__img--people-5 {
+    bottom: 0;
+    left: 284px;
+    background: url(<path-to-image>) #ff947a 50% / cover no-repeat;
+}
+
+.feedback__img--people-6 {
+    left: 641px;
+    bottom: 29px;
+    background: url(<path-to-image>) #b1dfdc 50% / cover no-repeat;
+}
+
+/* ---------- banner ----------- */
+
+.banner {
+    background: #def6f5;
+}
+
+.banner .content {
+    display: flex;
+    gap: 410px;
+    padding-top: 76px;
+    padding-bottom: 88px;
+    align-items: center;
+}
+
+.banner__title {
+    color: #070707;
+    font-size: 4.2rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.banner__desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.banner__btn {
+    background: #2ac9bf;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.banner__btn:active {
+    transform: scale(99%);
+}
+
+/* ---------- footer ----------- */
+
+.footer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 130px;
+}
+
+.footer__info {
+    display: flex;
+    gap: 144px;
+}
+
+.footer__infor--list__title {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.colfouth {
+    margin-bottom: 20px;
+}
+
+.footer__info--list__item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.footer__info--list__item a {
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+
+.footer__info--list__item img {
+    margin-bottom: 14px;
+}
+
+.footer__info--list__item img:hover {
+    cursor: pointer;
+}
+
+.colst--about {
+    margin-bottom: 2px;
+}
+
+.colst--carrer {
+    margin-bottom: 1px;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 80px;
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    font-weight: 400;
 }
