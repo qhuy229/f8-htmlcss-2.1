@@ -70,7 +70,7 @@ a {
 }
 
 .nav__heading--item a:hover {
-    color: var(--primary-color);
+    text-shadow: 0.5px 0 0 var(--primary-color);
 }
 
 .nav__heading--actions {
@@ -100,6 +100,14 @@ a {
     border-radius: 6px;
     font-size: 1.6rem;
     font-weight: 600;
+}
+
+.nav__heading--btn-signup:hover {
+    opacity: 0.8;
+}
+
+.nav__heading--btn-signup:active {
+    transform: scale(0.992);
 }
 
 /* -------- hero --------- */
@@ -306,7 +314,7 @@ a {
 }
 
 .feature__header--heading {
-    color: #0d1111;
+    color: var(--primary-color);
     font-size: 4.2rem;
     font-weight: 700;
     line-height: 5.6rem;
@@ -317,6 +325,7 @@ a {
     color: #767e7e;
     font-size: 1.8rem;
     font-weight: 400;
+    line-height: 1.5;
 }
 
 .feature__section--list {
@@ -333,7 +342,7 @@ a {
 }
 
 .feature__section--items__heading {
-    color: #0d1111;
+    color: var(--primary-color);
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 16px;
@@ -362,7 +371,7 @@ a {
 }
 
 .course__header--heading {
-    color: #0d1111;
+    color: var(--primary-color);
     font-size: 4.2rem;
     font-weight: 700;
     margin-bottom: 19px;
@@ -385,7 +394,7 @@ a {
 }
 
 .course__header--view-all {
-    color: #1ebfc1;
+    color: var(--secondary-color);
     margin-top: 26px;
     font-size: 1.4rem;
     font-weight: 700;
@@ -429,10 +438,14 @@ a {
 }
 
 .course__section--items__heading {
-    color: #0d1111;
+    color: var(--primary-color);
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 16px;
+}
+
+.course__section--items__heading:active {
+    color: #366461;
 }
 
 .course__section--items__fee-value {
@@ -449,7 +462,7 @@ a {
 }
 
 .course__section--items__value {
-    color: #0d1111;
+    color: #var(--primary-color);
     font-size: 2.2rem;
     font-weight: 700;
 }
@@ -478,7 +491,7 @@ a {
 }
 
 .course__countdown--quantity {
-    color: #0d1111;
+    color: #var(--primary-color);
     text-align: center;
     font-size: 6.2rem;
     font-weight: 700;
@@ -565,7 +578,8 @@ a {
 .feedback__img--people-1 {
     top: 0;
     left: 216px;
-    background: url(<path-to-image>) #1ebfc1 50% / cover no-repeat;
+    background: url(<path-to-image>) var(--secondary-color) 50% / cover
+        no-repeat;
 }
 
 .feedback__img--people-2 {
@@ -633,6 +647,10 @@ a {
     font-weight: 600;
 }
 
+.banner__btn:hover {
+    opacity: 0.8;
+}
+
 .banner__btn:active {
     transform: scale(99%);
 }
@@ -675,7 +693,10 @@ a {
     font-weight: 400;
     margin-bottom: 18px;
     display: inline-block;
-    text-decoration: underline ;
+}
+
+.footer__info--list__item a:hover {
+    text-decoration: underline;
 }
 
 .footer__info--list__item img {
